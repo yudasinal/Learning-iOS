@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B9957D318EEF7390054C099 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9957D218EEF7390054C099 /* CoreLocation.framework */; };
+		2B9957D618EF00660054C099 /* NSURL+QSParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9957D518EF00660054C099 /* NSURL+QSParameters.m */; };
+		2B9E822318EE94C0000AE4D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9E822218EE94C0000AE4D3 /* Foundation.framework */; };
+		2B9E822518EE94C0000AE4D3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9E822418EE94C0000AE4D3 /* CoreGraphics.framework */; };
+		2B9E822718EE94C0000AE4D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9E822618EE94C0000AE4D3 /* UIKit.framework */; };
+		2B9E822D18EE94C0000AE4D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B9E822B18EE94C0000AE4D3 /* InfoPlist.strings */; };
+		2B9E822F18EE94C0000AE4D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9E822E18EE94C0000AE4D3 /* main.m */; };
+		2B9E823318EE94C0000AE4D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9E823218EE94C0000AE4D3 /* AppDelegate.m */; };
+		2B9E823618EE94C0000AE4D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B9E823418EE94C0000AE4D3 /* Main.storyboard */; };
+		2B9E823918EE94C1000AE4D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9E823818EE94C1000AE4D3 /* ViewController.m */; };
+		2B9E823B18EE94C1000AE4D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B9E823A18EE94C1000AE4D3 /* Images.xcassets */; };
+		2B9E824218EE94C1000AE4D3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9E824118EE94C1000AE4D3 /* XCTest.framework */; };
+		2B9E824318EE94C1000AE4D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9E822218EE94C0000AE4D3 /* Foundation.framework */; };
+		2B9E824418EE94C1000AE4D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9E822618EE94C0000AE4D3 /* UIKit.framework */; };
+		2B9E824C18EE94C1000AE4D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B9E824A18EE94C1000AE4D3 /* InfoPlist.strings */; };
+		2B9E824E18EE94C1000AE4D3 /* TrafficWatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9E824D18EE94C1000AE4D3 /* TrafficWatchTests.m */; };
+		2B9E825918EE9AA4000AE4D3 /* TWIncident.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9E825818EE9AA4000AE4D3 /* TWIncident.m */; };
+		2B9E825C18EE9EC2000AE4D3 /* TWIncidentParseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9E825B18EE9EC2000AE4D3 /* TWIncidentParseOperation.m */; };
+		2B9E826518EEB507000AE4D3 /* TWIncidentCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9E826418EEB507000AE4D3 /* TWIncidentCellTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B9E824518EE94C1000AE4D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B9E821718EE94C0000AE4D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B9E821E18EE94C0000AE4D3;
+			remoteInfo = TrafficWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B9957D218EEF7390054C099 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2B9957D418EF00660054C099 /* NSURL+QSParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+QSParameters.h"; sourceTree = "<group>"; };
+		2B9957D518EF00660054C099 /* NSURL+QSParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+QSParameters.m"; sourceTree = "<group>"; };
+		2B9E821F18EE94C0000AE4D3 /* TrafficWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B9E822218EE94C0000AE4D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2B9E822418EE94C0000AE4D3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2B9E822618EE94C0000AE4D3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2B9E822A18EE94C0000AE4D3 /* TrafficWatch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrafficWatch-Info.plist"; sourceTree = "<group>"; };
+		2B9E822C18EE94C0000AE4D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2B9E822E18EE94C0000AE4D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B9E823018EE94C0000AE4D3 /* TrafficWatch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrafficWatch-Prefix.pch"; sourceTree = "<group>"; };
+		2B9E823118EE94C0000AE4D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2B9E823218EE94C0000AE4D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2B9E823518EE94C0000AE4D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B9E823718EE94C0000AE4D3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2B9E823818EE94C1000AE4D3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2B9E823A18EE94C1000AE4D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2B9E824018EE94C1000AE4D3 /* TrafficWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrafficWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B9E824118EE94C1000AE4D3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2B9E824918EE94C1000AE4D3 /* TrafficWatchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrafficWatchTests-Info.plist"; sourceTree = "<group>"; };
+		2B9E824B18EE94C1000AE4D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2B9E824D18EE94C1000AE4D3 /* TrafficWatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrafficWatchTests.m; sourceTree = "<group>"; };
+		2B9E825718EE9AA4000AE4D3 /* TWIncident.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWIncident.h; sourceTree = "<group>"; };
+		2B9E825818EE9AA4000AE4D3 /* TWIncident.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWIncident.m; sourceTree = "<group>"; };
+		2B9E825A18EE9EC2000AE4D3 /* TWIncidentParseOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWIncidentParseOperation.h; sourceTree = "<group>"; };
+		2B9E825B18EE9EC2000AE4D3 /* TWIncidentParseOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWIncidentParseOperation.m; sourceTree = "<group>"; };
+		2B9E826218EEAA45000AE4D3 /* TWIncidentsParserDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TWIncidentsParserDelegate.h; sourceTree = "<group>"; };
+		2B9E826318EEB507000AE4D3 /* TWIncidentCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWIncidentCellTableViewCell.h; sourceTree = "<group>"; };
+		2B9E826418EEB507000AE4D3 /* TWIncidentCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWIncidentCellTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B9E821C18EE94C0000AE4D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B9957D318EEF7390054C099 /* CoreLocation.framework in Frameworks */,
+				2B9E822518EE94C0000AE4D3 /* CoreGraphics.framework in Frameworks */,
+				2B9E822718EE94C0000AE4D3 /* UIKit.framework in Frameworks */,
+				2B9E822318EE94C0000AE4D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B9E823D18EE94C1000AE4D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B9E824218EE94C1000AE4D3 /* XCTest.framework in Frameworks */,
+				2B9E824418EE94C1000AE4D3 /* UIKit.framework in Frameworks */,
+				2B9E824318EE94C1000AE4D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B9E821618EE94C0000AE4D3 = {
+			isa = PBXGroup;
+			children = (
+				2B9E822818EE94C0000AE4D3 /* TrafficWatch */,
+				2B9E824718EE94C1000AE4D3 /* TrafficWatchTests */,
+				2B9E822118EE94C0000AE4D3 /* Frameworks */,
+				2B9E822018EE94C0000AE4D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2B9E822018EE94C0000AE4D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B9E821F18EE94C0000AE4D3 /* TrafficWatch.app */,
+				2B9E824018EE94C1000AE4D3 /* TrafficWatchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B9E822118EE94C0000AE4D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B9957D218EEF7390054C099 /* CoreLocation.framework */,
+				2B9E822218EE94C0000AE4D3 /* Foundation.framework */,
+				2B9E822418EE94C0000AE4D3 /* CoreGraphics.framework */,
+				2B9E822618EE94C0000AE4D3 /* UIKit.framework */,
+				2B9E824118EE94C1000AE4D3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B9E822818EE94C0000AE4D3 /* TrafficWatch */ = {
+			isa = PBXGroup;
+			children = (
+				2B9E823118EE94C0000AE4D3 /* AppDelegate.h */,
+				2B9E823218EE94C0000AE4D3 /* AppDelegate.m */,
+				2B9E823418EE94C0000AE4D3 /* Main.storyboard */,
+				2B9E823718EE94C0000AE4D3 /* ViewController.h */,
+				2B9E823818EE94C1000AE4D3 /* ViewController.m */,
+				2B9E826218EEAA45000AE4D3 /* TWIncidentsParserDelegate.h */,
+				2B9E823A18EE94C1000AE4D3 /* Images.xcassets */,
+				2B9E822918EE94C0000AE4D3 /* Supporting Files */,
+				2B9E825718EE9AA4000AE4D3 /* TWIncident.h */,
+				2B9E825818EE9AA4000AE4D3 /* TWIncident.m */,
+				2B9E825A18EE9EC2000AE4D3 /* TWIncidentParseOperation.h */,
+				2B9E825B18EE9EC2000AE4D3 /* TWIncidentParseOperation.m */,
+				2B9E826318EEB507000AE4D3 /* TWIncidentCellTableViewCell.h */,
+				2B9E826418EEB507000AE4D3 /* TWIncidentCellTableViewCell.m */,
+				2B9957D418EF00660054C099 /* NSURL+QSParameters.h */,
+				2B9957D518EF00660054C099 /* NSURL+QSParameters.m */,
+			);
+			path = TrafficWatch;
+			sourceTree = "<group>";
+		};
+		2B9E822918EE94C0000AE4D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B9E822A18EE94C0000AE4D3 /* TrafficWatch-Info.plist */,
+				2B9E822B18EE94C0000AE4D3 /* InfoPlist.strings */,
+				2B9E822E18EE94C0000AE4D3 /* main.m */,
+				2B9E823018EE94C0000AE4D3 /* TrafficWatch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B9E824718EE94C1000AE4D3 /* TrafficWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B9E824D18EE94C1000AE4D3 /* TrafficWatchTests.m */,
+				2B9E824818EE94C1000AE4D3 /* Supporting Files */,
+			);
+			path = TrafficWatchTests;
+			sourceTree = "<group>";
+		};
+		2B9E824818EE94C1000AE4D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B9E824918EE94C1000AE4D3 /* TrafficWatchTests-Info.plist */,
+				2B9E824A18EE94C1000AE4D3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B9E821E18EE94C0000AE4D3 /* TrafficWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B9E825118EE94C1000AE4D3 /* Build configuration list for PBXNativeTarget "TrafficWatch" */;
+			buildPhases = (
+				2B9E821B18EE94C0000AE4D3 /* Sources */,
+				2B9E821C18EE94C0000AE4D3 /* Frameworks */,
+				2B9E821D18EE94C0000AE4D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrafficWatch;
+			productName = TrafficWatch;
+			productReference = 2B9E821F18EE94C0000AE4D3 /* TrafficWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B9E823F18EE94C1000AE4D3 /* TrafficWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B9E825418EE94C1000AE4D3 /* Build configuration list for PBXNativeTarget "TrafficWatchTests" */;
+			buildPhases = (
+				2B9E823C18EE94C1000AE4D3 /* Sources */,
+				2B9E823D18EE94C1000AE4D3 /* Frameworks */,
+				2B9E823E18EE94C1000AE4D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B9E824618EE94C1000AE4D3 /* PBXTargetDependency */,
+			);
+			name = TrafficWatchTests;
+			productName = TrafficWatchTests;
+			productReference = 2B9E824018EE94C1000AE4D3 /* TrafficWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B9E821718EE94C0000AE4D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "LS1 TUM";
+				TargetAttributes = {
+					2B9E823F18EE94C1000AE4D3 = {
+						TestTargetID = 2B9E821E18EE94C0000AE4D3;
+					};
+				};
+			};
+			buildConfigurationList = 2B9E821A18EE94C0000AE4D3 /* Build configuration list for PBXProject "TrafficWatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B9E821618EE94C0000AE4D3;
+			productRefGroup = 2B9E822018EE94C0000AE4D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B9E821E18EE94C0000AE4D3 /* TrafficWatch */,
+				2B9E823F18EE94C1000AE4D3 /* TrafficWatchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B9E821D18EE94C0000AE4D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B9E823B18EE94C1000AE4D3 /* Images.xcassets in Resources */,
+				2B9E822D18EE94C0000AE4D3 /* InfoPlist.strings in Resources */,
+				2B9E823618EE94C0000AE4D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B9E823E18EE94C1000AE4D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B9E824C18EE94C1000AE4D3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B9E821B18EE94C0000AE4D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B9E826518EEB507000AE4D3 /* TWIncidentCellTableViewCell.m in Sources */,
+				2B9E825918EE9AA4000AE4D3 /* TWIncident.m in Sources */,
+				2B9957D618EF00660054C099 /* NSURL+QSParameters.m in Sources */,
+				2B9E825C18EE9EC2000AE4D3 /* TWIncidentParseOperation.m in Sources */,
+				2B9E823918EE94C1000AE4D3 /* ViewController.m in Sources */,
+				2B9E823318EE94C0000AE4D3 /* AppDelegate.m in Sources */,
+				2B9E822F18EE94C0000AE4D3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B9E823C18EE94C1000AE4D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B9E824E18EE94C1000AE4D3 /* TrafficWatchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B9E824618EE94C1000AE4D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B9E821E18EE94C0000AE4D3 /* TrafficWatch */;
+			targetProxy = 2B9E824518EE94C1000AE4D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B9E822B18EE94C0000AE4D3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B9E822C18EE94C0000AE4D3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2B9E823418EE94C0000AE4D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B9E823518EE94C0000AE4D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B9E824A18EE94C1000AE4D3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B9E824B18EE94C1000AE4D3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B9E824F18EE94C1000AE4D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2B9E825018EE94C1000AE4D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B9E825218EE94C1000AE4D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrafficWatch/TrafficWatch-Prefix.pch";
+				INFOPLIST_FILE = "TrafficWatch/TrafficWatch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2B9E825318EE94C1000AE4D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrafficWatch/TrafficWatch-Prefix.pch";
+				INFOPLIST_FILE = "TrafficWatch/TrafficWatch-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2B9E825518EE94C1000AE4D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TrafficWatch.app/TrafficWatch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrafficWatch/TrafficWatch-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TrafficWatchTests/TrafficWatchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2B9E825618EE94C1000AE4D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TrafficWatch.app/TrafficWatch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrafficWatch/TrafficWatch-Prefix.pch";
+				INFOPLIST_FILE = "TrafficWatchTests/TrafficWatchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B9E821A18EE94C0000AE4D3 /* Build configuration list for PBXProject "TrafficWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B9E824F18EE94C1000AE4D3 /* Debug */,
+				2B9E825018EE94C1000AE4D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B9E825118EE94C1000AE4D3 /* Build configuration list for PBXNativeTarget "TrafficWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B9E825218EE94C1000AE4D3 /* Debug */,
+				2B9E825318EE94C1000AE4D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B9E825418EE94C1000AE4D3 /* Build configuration list for PBXNativeTarget "TrafficWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B9E825518EE94C1000AE4D3 /* Debug */,
+				2B9E825618EE94C1000AE4D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B9E821718EE94C0000AE4D3 /* Project object */;
+}
