@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B21D5C218F899AE00095C0B /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B21D5C118F899AE00095C0B /* placeholder.png */; };
+		2B21D5C518F89A6800095C0B /* TWIconDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B21D5C418F89A6800095C0B /* TWIconDownloader.m */; };
 		2B9957D318EEF7390054C099 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9957D218EEF7390054C099 /* CoreLocation.framework */; };
 		2B9957D618EF00660054C099 /* NSURL+QSParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9957D518EF00660054C099 /* NSURL+QSParameters.m */; };
 		2B9E822318EE94C0000AE4D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9E822218EE94C0000AE4D3 /* Foundation.framework */; };
@@ -39,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B21D5C118F899AE00095C0B /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		2B21D5C318F89A6800095C0B /* TWIconDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWIconDownloader.h; sourceTree = "<group>"; };
+		2B21D5C418F89A6800095C0B /* TWIconDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWIconDownloader.m; sourceTree = "<group>"; };
 		2B9957D218EEF7390054C099 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2B9957D418EF00660054C099 /* NSURL+QSParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+QSParameters.h"; sourceTree = "<group>"; };
 		2B9957D518EF00660054C099 /* NSURL+QSParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+QSParameters.m"; sourceTree = "<group>"; };
@@ -129,6 +134,7 @@
 		2B9E822818EE94C0000AE4D3 /* TrafficWatch */ = {
 			isa = PBXGroup;
 			children = (
+				2B21D5C118F899AE00095C0B /* placeholder.png */,
 				2B9E823118EE94C0000AE4D3 /* AppDelegate.h */,
 				2B9E823218EE94C0000AE4D3 /* AppDelegate.m */,
 				2B9E823418EE94C0000AE4D3 /* Main.storyboard */,
@@ -145,6 +151,8 @@
 				2B9E826418EEB507000AE4D3 /* TWIncidentCellTableViewCell.m */,
 				2B9957D418EF00660054C099 /* NSURL+QSParameters.h */,
 				2B9957D518EF00660054C099 /* NSURL+QSParameters.m */,
+				2B21D5C318F89A6800095C0B /* TWIconDownloader.h */,
+				2B21D5C418F89A6800095C0B /* TWIconDownloader.m */,
 			);
 			path = TrafficWatch;
 			sourceTree = "<group>";
@@ -255,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B9E823B18EE94C1000AE4D3 /* Images.xcassets in Resources */,
+				2B21D5C218F899AE00095C0B /* placeholder.png in Resources */,
 				2B9E822D18EE94C0000AE4D3 /* InfoPlist.strings in Resources */,
 				2B9E823618EE94C0000AE4D3 /* Main.storyboard in Resources */,
 			);
@@ -275,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B21D5C518F89A6800095C0B /* TWIconDownloader.m in Sources */,
 				2B9E826518EEB507000AE4D3 /* TWIncidentCellTableViewCell.m in Sources */,
 				2B9E825918EE9AA4000AE4D3 /* TWIncident.m in Sources */,
 				2B9957D618EF00660054C099 /* NSURL+QSParameters.m in Sources */,

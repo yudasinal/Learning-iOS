@@ -13,6 +13,7 @@
 -(instancetype)initWithTitle:(NSString *)title
                  summary:(NSString *)summary
                  weblink:(NSString *)weblink
+                 imageURLString:(NSString *)imageURLString
 
 {
     
@@ -21,6 +22,7 @@
         _title = title;
         _summary = summary;
         _weblink = weblink;
+        _imageURLString = imageURLString;
         
     }
     return self;
@@ -29,7 +31,7 @@
 
 
 -(id)init {
-    return [self initWithTitle:@"Unknown incident" summary:@"Not available." weblink:@"Not available."];
+    return [self initWithTitle:@"Unknown incident" summary:@"Not available." weblink:@"Not available." imageURLString:nil];
 }
 
 -(NSString *)description {

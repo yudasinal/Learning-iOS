@@ -10,6 +10,7 @@
 #import "TWIncident.h"
 #import "TWIncidentParseOperation.h"
 #import <objc/runtime.h>
+#import "TWIconDownloader.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,8 @@
 @property (strong, nonatomic) NSOperationQueue *operationQueue;
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) CLLocation *myLocation;
+
+@property (nonatomic, strong) NSMutableDictionary *imageDownloadsInProgress;
 
 @end
 
@@ -80,9 +83,80 @@
     TWIncident *incident = self.incidents[indexPath.row];
     cell.textLabel.text = incident.title;
     cell.detailTextLabel.text = incident.summary;
+    cell.imageView.contentMode = UIViewContentModeCenter;
+    
+    if (!incident.incidentIcon)
+    {
+        if (self.tableView.dragging == NO && self.tableView.decelerating == NO)
+        {
+            [self startIconDownload:incident forIndexPath:indexPath];
+        }
+        cell.imageView.image = [UIImage imageNamed:@"placeholder.png"];
+    }
+    else
+    {
+        cell.imageView.image = incident.incidentIcon;
+    }
+
     return cell;
     
 }
+
+- (void)startIconDownload:(TWIncident *)incident forIndexPath:(NSIndexPath *)indexPath
+{
+    TWIconDownloader *iconDownloader = [self.imageDownloadsInProgress objectForKey:indexPath];
+    if (iconDownloader == nil)
+    {
+        iconDownloader = [[TWIconDownloader alloc] init];
+        iconDownloader.incident = incident;
+        [iconDownloader setCompletionHandler:^{
+            
+            UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+            
+            cell.imageView.image = incident.incidentIcon;
+            
+            [self.imageDownloadsInProgress removeObjectForKey:indexPath];
+            
+        }];
+        [self.imageDownloadsInProgress setObject:iconDownloader forKey:indexPath];
+        [iconDownloader startDownload];
+    }
+}
+
+- (void)loadImagesForOnscreenRows
+{
+    if ([self.incidents count] > 0)
+    {
+        NSArray *visiblePaths = [self.tableView indexPathsForVisibleRows];
+        for (NSIndexPath *indexPath in visiblePaths)
+        {
+            TWIncident *incident = [self.incidents objectAtIndex:indexPath.row];
+            
+            if (!incident.incidentIcon)
+            {
+                [self startIconDownload:incident forIndexPath:indexPath];
+            }
+        }
+    }
+}
+
+
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    
+    if (!decelerate)
+	{
+        [self loadImagesForOnscreenRows];
+    }
+}
+
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    
+    [self loadImagesForOnscreenRows];
+}
+
+
 
 - (void)loadIncidentsData {
     

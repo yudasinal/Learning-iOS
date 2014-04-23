@@ -16,10 +16,13 @@
 @property (strong, nonatomic) NSString *summary;
 @property (strong, nonatomic) CLLocation *location;
 @property (assign, nonatomic) CLLocationDistance distanceFromUser;
+@property (nonatomic, strong) UIImage *incidentIcon;
+@property (nonatomic, strong) NSString *imageURLString;
 
 -(instancetype)initWithTitle:(NSString *)title
                  summary:(NSString *)summary
-                 weblink:(NSString *)weblink;
+                 weblink:(NSString *)weblink
+                 imageURLString:(NSString *)imageURLString;
 
 
 @end

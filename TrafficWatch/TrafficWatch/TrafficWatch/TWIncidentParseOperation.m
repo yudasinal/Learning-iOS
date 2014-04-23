@@ -79,7 +79,7 @@ qualifiedName:(NSString *)qName
         return;
     }
     
-    if([elementName isEqualToString:@"id"]) {
+    if([elementName isEqualToString:@"link"]) {
         NSString *relAtt = attributeDict[@"rel"];
         
         if([relAtt isEqualToString:@"alternate"]) {
@@ -121,6 +121,15 @@ qualifiedName:(NSString *)qName
         self.currentOfCurrentIncidentProperty = [NSMutableString string];
     }
     
+    else if([elementName isEqualToString:@"img"])
+    {
+        NSString *srcAtt = attributeDict[@"src"];
+        if( [srcAtt rangeOfString:@"roadsign"].location != NSNotFound )
+        {
+            self.currentIncidentObject.imageURLString = srcAtt;
+        }
+
+    }
     else{
         self.currentOfCurrentIncidentProperty = nil;
     }
